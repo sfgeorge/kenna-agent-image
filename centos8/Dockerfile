@@ -38,4 +38,4 @@ RUN true \
   # Enable kenna-agent
   && systemctl enable kenna-agent
 
-CMD ["/usr/sbin/init"]
+CMD ["/usr/lib/systemd/systemd", "--system", "--unit=multi-user.target"]
