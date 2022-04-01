@@ -1,0 +1,21 @@
+### %s ###
+
+# Please edit kenna-agent.toml.template instead of
+# /etc/kenna-agent/kenna-agent.toml
+
+[kenna]
+url = "https://api.kennasecurity.com"
+token = "%s"
+
+[connector.nexpose]
+id = 12345
+## Type is one of "nexpose", "nessus", etc.
+type = "nexpose"
+## How to connect to the scanner itself
+url = "https://nexpose.example.com"
+username = "user"
+password = "pass"
+## Set this to false for self-signed certs
+#validate_ssl = false
+## Standard cron format: "min hr dom mon dow"
+#schedule = "*45 23 * * *"
